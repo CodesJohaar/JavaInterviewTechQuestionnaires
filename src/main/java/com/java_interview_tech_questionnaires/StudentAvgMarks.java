@@ -1,9 +1,5 @@
 package com.java_interview_tech_questionnaires;
 
-import lombok.Getter;
-import lombok.Setter;
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -14,11 +10,7 @@ import java.util.stream.Collectors;
  */
 public class StudentAvgMarks {
 	public static class StudentMarks {
-		@Getter
-		@Setter
 		private Integer id;
-		@Getter
-		@Setter
 		private Integer marks;
 		public StudentMarks() {
 			this.id = null;
@@ -31,6 +23,22 @@ public class StudentAvgMarks {
 		
 		public static StudentMarksBuilder builder() {
 			return new StudentMarksBuilder();
+		}
+		
+		public Integer getId() {
+			return id;
+		}
+		
+		public void setId(Integer id) {
+			this.id = id;
+		}
+		
+		public Integer getMarks() {
+			return marks;
+		}
+		
+		public void setMarks(Integer marks) {
+			this.marks = marks;
 		}
 		
 		public static class StudentMarksBuilder {
@@ -68,7 +76,6 @@ public class StudentAvgMarks {
 		System.out.println(collect1);
 	}
 	
-	@NotNull
 	private static List<StudentMarks> getStudentMarksBuilder() {
 		return List.of(
 				StudentMarks.builder().id(101).marks(90).build(),

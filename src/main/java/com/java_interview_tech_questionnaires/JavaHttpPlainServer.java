@@ -1,4 +1,4 @@
-package com.my_portfolio;
+package com.java_interview_tech_questionnaires;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpServer;
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 /**
  * @author RavikantS on Aug 27, 2025
  */
-public class Main {
+public class JavaHttpPlainServer {
 	private static final Map<Integer, Object> data = new HashMap<>();
 	private static final AtomicInteger counter = new AtomicInteger(1);
 	enum RequestTypes {

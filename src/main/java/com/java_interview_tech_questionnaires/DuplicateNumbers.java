@@ -1,13 +1,9 @@
 package com.java_interview_tech_questionnaires;
 
-import kotlin.Function;
-
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 /**

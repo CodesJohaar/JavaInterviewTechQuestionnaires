@@ -1,17 +1,12 @@
 package com.java_interview_tech_questionnaires;
 
-import org.jetbrains.annotations.NotNull;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
 import java.util.concurrent.CountDownLatch;
 
 /**
  * @author RavikantS on Jul 31, 2025
  */
-@Component
-@Scope("prototype")
+//@Component
+//@Scope("prototype")
 public record JobConfig(Long id, String jobName, String jobParams, CountDownLatch latch) implements Runnable, Comparable<JobConfig> {
     @Override
     public void run() {
@@ -25,7 +20,7 @@ public record JobConfig(Long id, String jobName, String jobParams, CountDownLatc
     }
     
     @Override
-    public int compareTo(@NotNull JobConfig o) {
+    public int compareTo(JobConfig o) {
         return 0;
     }
 }

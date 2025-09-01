@@ -1,7 +1,5 @@
 package com.java_interview_tech_questionnaires;
 
-import jakarta.annotation.PreDestroy;
-
 /**
  * @author RavikantS on Aug 06, 2025
  */
@@ -28,7 +26,7 @@ public class Singleton {
 		return singleton;
 	}
 	
-	@PreDestroy
+//	@PreDestroy
 	public void destroy() {
 		singleton = null;
 	}
