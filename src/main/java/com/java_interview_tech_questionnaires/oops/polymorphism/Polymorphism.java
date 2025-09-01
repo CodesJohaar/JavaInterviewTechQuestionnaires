@@ -37,9 +37,28 @@ public class Polymorphism {
 	}
 	
 	public static void main(String[] args) {
-		Parent child = new Child();
+		System.out.println("Overloading Examples : ");
+		Polymorphism polymorphism = new Polymorphism();
+		polymorphism.add(2, 3);
+		polymorphism.add(2, 5, 1);
+		System.out.println("\nOverriding Examples : ");
+		Parent parent = new Child();
 //		NOTE: It will decide which print method will get called during runtime.
-		child.print();
+		parent.print();
+//		NOTE: Bonus Example
+//	    Polymorphism can also be achieved in class level using inheritance.
+		parent = new ChildTwo();
+//		NOTE: Now the same parent reference is having multiple forms at Runtime.
+		parent.print();
+//		NOTE: Below code is also valid, representing Runtime Polymorphism at class level.
+		parent = new Parent();
+		parent.print();
+	}
+//	NOTE: Another class extending Parent to understand Bonus Example mentioned in Main method.
+	public static class ChildTwo extends Parent {
+		public void print() {
+			System.out.println("Runtime Polymorphism at class level!!!");
+		}
 	}
 	
 }
