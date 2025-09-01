@@ -23,6 +23,9 @@ public class EmpCountBySalary {
 				.collect(Collectors.groupingBy(Employee::department));
 		collect1.forEach((k, v) -> v.forEach(System.out::println));
 		
+		List<Employee> list1 = employees.stream().sorted(Comparator.comparing(Employee::name)
+						.thenComparing(Comparator.comparingDouble(Employee::salary).reversed()))
+				.toList();
 		
 		
 		Map<Double, Long> collect = employees.stream().sorted(Comparator.comparingDouble(Employee::salary))
