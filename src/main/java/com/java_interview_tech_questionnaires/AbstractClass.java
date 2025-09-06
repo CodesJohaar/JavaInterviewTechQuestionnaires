@@ -5,15 +5,19 @@ package com.java_interview_tech_questionnaires;
  */
 public abstract class AbstractClass {
 	
-	protected static void print(String message) {
+	protected static <M> void print(M message) {
 		print(message, "");
 	}
 	
-	protected static <R> void print(String message, R input) {
+	protected static <M, R> void print(M message, R input) {
 		System.out.println(message + " : " + input);
 	}
 	
-	protected static void printErr(String errMessage) {
-		System.err.println(errMessage);
+	protected static <M, S> void printErr(M errMessage) {
+		printErr(errMessage, "");
+	}
+	
+	protected static <M, S> void printErr(M errMessage, S stackTrace) {
+		System.err.println(errMessage + " : " + stackTrace);
 	}
 }

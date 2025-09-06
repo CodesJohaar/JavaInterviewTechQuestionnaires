@@ -13,6 +13,8 @@ public class BufferReaderClass extends AbstractClass {
 	public static void main(String[] args) {
 		// NOTE: This particular class is used to read near to infinite data from user.
 		try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))) {
+			byte[] bytes = System.in.readNBytes(5);
+			print("Bytes using System.in", bytes);
 			// NOTE: Reading a STATEMENT
 			print("Enter a statement");
 			String statement = bufferedReader.readLine();
