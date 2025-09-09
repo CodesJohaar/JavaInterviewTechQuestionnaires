@@ -72,6 +72,11 @@ Tanla
 
 Zerodha
 
+Barclays
+AutoRabbit
+ThoughtWorks
+
+
 ——————————————
 
 Zomato
