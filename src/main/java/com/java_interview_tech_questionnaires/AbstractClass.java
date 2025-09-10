@@ -1,9 +1,14 @@
 package com.java_interview_tech_questionnaires;
 
+import java.nio.file.Path;
+
 /**
  * @author RavikantS on Sept 04, 2025
  */
 public abstract class AbstractClass {
+	protected static String fileName = "FileWriterData.txt";
+	protected static String directory = "./src/main/resources/file_writes/";
+	protected static Path filePath = Path.of(directory, fileName);
 	
 	protected static <M> void print(M message) {
 		print(message, "");

@@ -5,7 +5,7 @@ import java.util.Objects;
 /**
  * @author RavikantS on Aug 05, 2025
  */
-public record Employee(Long id, String name, Double salary, String department) {
+public record Employee(Long id, String name, Double salary, String department, Integer age) {
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) return true;

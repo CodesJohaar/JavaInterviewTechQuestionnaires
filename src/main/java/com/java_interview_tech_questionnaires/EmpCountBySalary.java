@@ -11,11 +11,11 @@ import java.util.stream.Collectors;
 public class EmpCountBySalary {
 	public static void main(String[] args) {
 		List<Employee> employees = List.of(
-				new Employee(11L, "Ravi", 5013240.9, "Accounting"),
-				new Employee(12L, "Sagar", 5013250.9, "Engineering"),
-				new Employee(13L, "Rohit", 501540.9, "Engineering"),
-				new Employee(14L, "Neelam", 13240.9, "Accounting"),
-				new Employee(15L, "Rajgir", 5040.9, "Education")
+				new Employee(11L, "Ravi", 5013240.9, "Accounting", 25),
+				new Employee(12L, "Sagar", 5013250.9, "Engineering", 21),
+				new Employee(13L, "Rohit", 501540.9, "Engineering", 28),
+				new Employee(14L, "Neelam", 13240.9, "Accounting", 40),
+				new Employee(15L, "Rajgir", 5040.9, "Education", 49)
 		);
 		
 		Map<String, List<Employee>> collect1 = employees.stream()

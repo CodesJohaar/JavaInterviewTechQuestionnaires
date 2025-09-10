@@ -1,0 +1,9 @@
+This is trial to write data using files class method named write string
+
+exit
+done
+doneeeee
+noo
+
+Ok
+Now done
